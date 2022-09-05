@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    width: 100vw;
+}
+body{
+    background-color: white;
+    width: 50%;
+}
+.esquerda{
+    position: absolute;
+    width: 616px;
+    height: 100%;
+    background-color: #222222;
+    z-index: -1;
+}
+.logo-nike{
+    position: absolute;
+    display: inline-flex;
+    width: auto;
+    height: 159px;
+    padding-left: 66px;
+}
+.background-user{
+    z-index: -1;
+    width: 80px;
+    height: 80px;
+    background-color: #222222;
+    border-radius: 50%;
+    align-self: end;
+    margin: 20px;
+}
+.user-logo{
+    align-self: flex-end;
+}
+.text-container{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    gap: 76px;
+    size: 24px;
+    padding-top: 46px;
+    padding-left: 766px;
+    font-family: 'Inter', sans-serif;
+    padding-right: 580px;
+}
