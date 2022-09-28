@@ -3,130 +3,132 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100vh;
+    display: grid;
+    background-color: #EFEFEF;
+    grid-template-rows: 150px 1fr 150px;
+}
+.rectangle{
+    height: 100vh;
+    width: 30vw;
+    position: absolute;
+}
 header{
     display: flex;
-    width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
 }
-body{
-    background-color: white;
-    width: 50%;
-}
-
-.esquerda{
+.logo_nike{
     position: absolute;
-    width: 32vw;
-    height: 100%;
-    background-color: #222222;
-    z-index: -1;
-}
-.logo-nike{
-    position: absolute;
-    display: inline-flex;
+    margin-left: 4vw;
     width: auto;
     height: 159px;
-    padding-left: 66px;
 }
-.background-user{
-    z-index: -1;
-    width: 80px;
-    height: 80px;
+.options{
+    display: flex;
+    justify-content: center;
+    padding-left: 42%;
+    align-items: center;
+    list-style: none;
+    gap: 75px;
+    font-size: 1.5rem;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+.user{
     background-color: #222222;
     border-radius: 50%;
-    align-self: end;
-    margin: 20px;
+    width: 80px;
+    height: 80px;
+    margin: 1.4vw;
 }
-.user-logo{
-    position: absolute;
-    align-self: flex-end;
-    z-index: 1;
+main{
+    display: grid;
+    grid-template-columns: 1fr 8fr 8fr;
 }
-.text-container{
+aside{
     display: flex;
-    flex-direction: row;
-    color: black;
-    gap: 76px;
-    size: 24px;
-    padding-top: 46px;
-    padding-left: 766px;
-    font-family: 'Inter';
-    padding-right: 580px;
+    justify-content: center;
+    align-items: center;
+    
 }
-.circulo{
-    height: 640px;
-    width: 640px;
-    background-color: #9C0610;
-    margin-left: 277px;
-    margin-top: 76px;
+.circle{
+    position: absolute;
+    background-image: linear-gradient(#9C0610, #CF5C55);
+    height: 679px;
+    width: 679px;
     border-radius: 50%;
-    align-self: center;
-    padding-left: 277px;
     box-shadow: 73px 8px 38px -10px rgba(189, 63, 61, 0.42);
-    position: absolute;
 }
-.img-tenis{
+.shoe{
     position: absolute;
-    margin-left: 169.52px;
-    margin-top: 10px;
-    width: 41.21vw;
+    width: 30vw;
     height: auto;
 }
-.jordan-brand{
-    margin-left: 1147px;
-    width: 13.38vw;
-    padding-top: 114px;
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.marca{
+    font-size: 1.5rem;
+    letter-spacing: 0.34em;
     font-family: 'Inter', sans-serif;
-    letter-spacing: 0.34em;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-bottom: 70px;
 }
-.titulo{
-    margin-left: 1113px;
-    font-size: 6em;
-    padding-top: 7.10vh;
-    width: 39.11vw;
-    height: 12.8;
-    font-family: 'Inter';
+.title{
+    font-size: 6rem;
     letter-spacing: 0.34em;
+    font-family: 'Inter', sans-serif;
 }
-.subtitulo{
-    margin-left: 1147px;
-    padding-top: 2px;
-    width: 33vw;
-    font-size: 1.5em;
-    letter-spacing: 0.05em;
-    font-family: 'Inter';
+.subtitle{
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    font-family: 'Inter', sans-serif;
     color: #585858;
+    width: 27.5vw;
+    padding-left: 5px;
+    padding-bottom: 50px;
 }
-.background-shop{
-    position: absolute;
-    z-index: -1;
-    background-color: #0B0B0B;
-    width: 19.89vw;
-    height: 10.77vh;
+.button{
+    width: 382px;
+    height: 101px;
     border-radius: 50px;
-    margin-left: 1147px;
-    margin-top: 53px;
-}
-.text-shop{
-    position: absolute;
-    z-index: 1;
+    background-color: #0B0B0B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    margin-left: 1239px;
-    margin-top: 90px;
-    font-family: 'Inter';
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
     letter-spacing: 0.34em;
-    font-size: 24px;
 }
-.sociais{
+footer{
+    display: grid;
+    grid-template-columns: social nike bars;
+    
+}
+.social{
     color: white;
-    list-style: none;
-    gap: 33px;
+    position: absolute;
     display: flex;
     flex-direction: row;
-    padding-top: 300px;
-    padding-left: 53px;
-    font-size: 24px;
+    align-self: center;
+    font-size: 1.5rem;
+    list-style: none;
+    gap: 2vw;
+    padding-left: 4vw;
 }
-.menu{
-    font-size: 24px;
-    place-self: end;
-    color: black;
+.nike{
+    grid-area: nike;
+}
+.bars{
+    display: grid;
+    grid-area: bars;
+    
 }
