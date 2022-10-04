@@ -39,8 +39,8 @@ header{
 .user{
     background-color: #222222;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     margin: 1.4vw;
 }
 main{
@@ -51,7 +51,6 @@ aside{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .circle{
     position: absolute;
@@ -63,8 +62,7 @@ aside{
 }
 .shoe{
     position: absolute;
-    width: 30vw;
-    height: auto;
+
 }
 article{
     display: flex;
@@ -107,11 +105,14 @@ article{
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     letter-spacing: 0.34em;
+    transition: all .5s;
+}
+.button:hover{
+    background-color: #9C0610;
 }
 footer{
     display: grid;
     grid-template-columns: social nike bars;
-    
 }
 .social{
     color: white;
@@ -130,5 +131,7 @@ footer{
 .bars{
     display: grid;
     grid-area: bars;
-    
+    position: absolute;
+    right: 1vw;
+    bottom: 5vh;
 }
